@@ -1,0 +1,43 @@
+# === scribbles ===
+  
+  
+  # get item from dict
+  d = {'a': 'A', 'b': 'B'}
+  d.get('b')
+  d['b']
+  
+  # set dict item
+  # d.set()  # no such thing!
+  d['b'] = 'a new value'
+  
+  
+  # iterating over items in dictionary
+  for key, value in d.items():
+    print(d)
+  
+  l = ['A']
+  # iterating over items in list
+  for item in l:
+    print(item)
+  
+  # iterating over items in dictionary by key
+  d2 = {'a': 1, 'b': 2}
+  for key in d:
+    print(d[key])
+    print(d2[key])
+  
+  # iterating over items in list by index
+  for index in range(len(l)):
+    print(l[index])
+
+
+List Comprehensions
+
+The function below is equivalent to the other below
+
+    a_cards = [card for card in player if card =='A']
+
+    a_cards = []
+    for card in player:
+        if card == 'A':
+            a_cards.append(card)
